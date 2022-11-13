@@ -6,7 +6,10 @@ import dsv from '@rollup/plugin-dsv'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), dsv()],
+  plugins: [
+    vue(), 
+    dsv(),
+  ],
   base: './',
   resolve: {
     alias: {
@@ -15,6 +18,7 @@ export default defineConfig({
   },
   build: {
     outDir: './docs',
+    chunkSizeWarningLimit: 100000000
   }
 })
 

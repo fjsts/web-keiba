@@ -7,8 +7,8 @@
 
     <div class="py-3">
 
-      <img class="rounded-full w-40 h-30 mx-auto "
-        src="https://raw.githubusercontent.com/fjsts/web-keiba/gh-pages/icon.png" alt="" width="384" height="512">
+      <img class="rounded-full w-20 h-20 mx-auto "
+        src="https://fjs-fire.com/icon.svg" alt="元ITエンジニアがPythonで構築した競馬予測">
 
       <div class="text-center">
         <a href="https://twitter.com/ai_dark_horses" class="text-slate-400 ml-1" rel="noopener noreferrer"
@@ -16,7 +16,7 @@
       </div>
 
       <h1 class="text-gray-100 text-2xl font-bold text-center mb-2">
-        休職中の元ITエンジニアがTailwind CSS/Next.js/Pythonで構築した競馬予測
+        元ITエンジニアがPythonで構築した競馬予測。
       </h1>
 
       <h2 class="text-gray-400 text-base font-bold text-center mb-1">説明</h2>
