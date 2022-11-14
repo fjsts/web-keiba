@@ -1,6 +1,6 @@
 <template>
     <div class="py-3">
-        <span class="text-sm">2.種類を選択してください</span>
+        <p class="py-1 text-sm">2.種類を選択してください</p>
         <TabGroup>
             <TabList>
                 <Tab class="w-1/2 selction-btn text-sm">
