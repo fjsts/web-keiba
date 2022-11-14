@@ -3,49 +3,49 @@
     <p class="py-1 text-sm">3.競馬場を選択してください</p>
     <TabGroup>
       <TabList>
-        <Tab id="kawasaki" class="w-1/3 selction-btn text-sm">
+        <Tab id="kawasaki" class="selection-btn selection-area opacity-20">
           川崎<br>(<span id="kawasaki_count"></span>件)
         </Tab>
-        <Tab id="nagoya" class="w-1/3 selction-btn text-sm">
+        <Tab id="nagoya" class="selection-btn selection-area opacity-20">
           名古屋<br>(<span id="nagoya_count"></span>件)
         </Tab>
-        <Tab id="kochi" class="w-1/3 selction-btn text-sm">
+        <Tab id="kochi" class="selection-btn selection-area opacity-20">
           高知<br>(<span id="kochi_count"></span>件)
         </Tab>
-        <Tab id="mizusawa" class="w-1/3 selction-btn text-sm">
+        <Tab id="mizusawa" class="selection-btn selection-area opacity-20">
           水沢<br>(<span id="mizusawa_count"></span>件)
         </Tab>
-        <Tab id="sonoda" class="w-1/3 selction-btn text-sm">
+        <Tab id="sonoda" class="selection-btn selection-area opacity-20">
           園田<br>(<span id="sonoda_count"></span>件)
         </Tab>
-        <Tab id="saga" class="w-1/3 selction-btn text-sm">
+        <Tab id="saga" class="selection-btn selection-area opacity-20">
           佐賀<br>(<span id="saga_count"></span>件)
         </Tab>
-        <Tab id="funabashi" class="w-1/3 selction-btn text-sm">
+        <Tab id="funabashi" class="selection-btn selection-area opacity-20">
           船橋<br>(<span id="funabashi_count"></span>件)
         </Tab>
-        <Tab id="kasamatsu" class="w-1/3 selction-btn text-sm">
+        <Tab id="kasamatsu" class="selection-btn selection-area opacity-20">
           笠松<br>(<span id="kasamatsu_count"></span>件)
         </Tab>
-        <Tab id="urawa" class="w-1/3 selction-btn text-sm">
+        <Tab id="urawa" class="selection-btn selection-area opacity-20">
           浦和<br>(<span id="urawa_count"></span>件)
         </Tab>
-        <Tab id="himeji" class="w-1/3 selction-btn text-sm">
+        <Tab id="himeji" class="selection-btn selection-area opacity-20">
           姫路<br>(<span id="himeji_count"></span>件)
         </Tab>
-        <Tab id="ooi" class="w-1/3 selction-btn text-sm">
+        <Tab id="ooi" class="selection-btn selection-area opacity-20">
           大井<br>(<span id="ooi_count"></span>件)
         </Tab>
-        <Tab id="kanazawa" class="w-1/3 selction-btn text-sm">
+        <Tab id="kanazawa" class="selection-btn selection-area opacity-20">
           金沢<br>(<span id="kanazawa_count"></span>件)
         </Tab>
-        <Tab id="monbetsu" class="w-1/3 selction-btn text-sm">
+        <Tab id="monbetsu" class="selection-btn selection-area opacity-20">
           門別<br>(<span id="monbetsu_count"></span>件)
         </Tab>
-        <Tab id="morioka" class="w-1/3 selction-btn text-sm">
+        <Tab id="morioka" class="selection-btn selection-area opacity-20">
           盛岡<br>(<span id="morioka_count"></span>件)
         </Tab>
-        <Tab id="obihiro" class="w-1/3 selction-btn text-sm">
+        <Tab id="obihiro" class="selection-btn selection-area opacity-20">
           帯広<br>(<span id="obihiro_count"></span>件)
         </Tab>
       </TabList>
@@ -159,9 +159,9 @@ onMounted(() => {
   for (let key in area_list) {
     let count = region_counter(area_list[key])
     document.getElementById(key + "_count").innerHTML = count;
-    if (count == 0) {
-      document.getElementById(key).classList.add("opacity-50")
-    }
+    if (count != 0) {
+      document.getElementById(key).classList.remove("opacity-20");
+    } 
   }
 
 })

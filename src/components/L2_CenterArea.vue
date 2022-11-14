@@ -3,33 +3,33 @@
     <p class="py-1 text-sm">3.競馬場を選択してください</p>
     <TabGroup>
       <TabList>
-        <Tab id="tokyo" class="w-1/3 selction-btn text-xs">
+        <Tab id="tokyo" class="selection-btn selection-area opacity-20">
           東京<br>(<span id="tokyo_count"></span>件)
         </Tab>
-        <Tab id="hanshin" class="w-1/3 selction-btn text-xs">
+        <Tab id="hanshin" class="selection-btn selection-area opacity-20">
           阪神<br>(<span id="hanshin_count"></span>件)
         </Tab>
-        <Tab id="fukushima" class="w-1/3 selction-btn text-xs">
+        <Tab id="fukushima" class="selection-btn selection-area opacity-20">
           福島<br>(<span id="fukushima_count"></span>件)
         </Tab>
 
-        <Tab id="chukyo" class="w-1/3 selction-btn text-xs">
+        <Tab id="chukyo" class="selection-btn selection-area opacity-20">
           中京<br>(<span id="chukyo_count"></span>件)
         </Tab>
-        <Tab id="nakayama" class="w-1/3 selction-btn text-xs">
+        <Tab id="nakayama" class="selection-btn selection-area opacity-20">
           中山<br>(<span id="nakayama_count"></span>件)
         </Tab>
-        <Tab id="hakodate" class="w-1/3 selction-btn text-xs">
+        <Tab id="hakodate" class="selection-btn selection-area opacity-20">
           函館<br>(<span id="hakodate_count"></span>件)
         </Tab>
 
-        <Tab id="kokura" class="w-1/3 selction-btn text-xs">
+        <Tab id="kokura" class="selection-btn selection-area opacity-20">
           小倉<br>(<span id="kokura_count"></span>件)
         </Tab>
-        <Tab id="niigata" class="w-1/3 selction-btn text-xs">
+        <Tab id="niigata" class="selection-btn selection-area opacity-20">
           新潟<br>(<span id="niigata_count"></span>件)
         </Tab>
-        <Tab id="kyoto" class="w-1/3 selction-btn text-xs">
+        <Tab id="kyoto" class="selection-btn selection-area opacity-20">
           京都<br>(<span id="kyoto_count"></span>件)
         </Tab>
 
@@ -119,8 +119,8 @@ onMounted(() => {
   for (let key in area_list) {
     let count = region_counter(area_list[key])
     document.getElementById(key + "_count").innerHTML = count;
-    if (count == 0) {
-      document.getElementById(key).classList.add("opacity-50")
+    if (count != 0) {
+      document.getElementById(key).classList.remove("opacity-20");
     }
   }
 })

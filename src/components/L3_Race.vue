@@ -3,18 +3,18 @@
     <p class="py-1 text-sm">4.レースを選択してください（◎ or ○：期待値高）</p>
     <TabGroup>
       <TabList>
-        <Tab :id=id_1r class="selction-btn w-1/4 text-xm opacity-50">1R</Tab>
-        <Tab :id=id_2r class="selction-btn w-1/4 text-xm opacity-50">2R</Tab>
-        <Tab :id=id_3r class="selction-btn w-1/4 text-xm opacity-50">3R</Tab>
-        <Tab :id=id_4r class="selction-btn w-1/4 text-xm opacity-50">4R</Tab>
-        <Tab :id=id_5r class="selction-btn w-1/4 text-xm opacity-50">5R</Tab>
-        <Tab :id=id_6r class="selction-btn w-1/4 text-xm opacity-50">6R</Tab>
-        <Tab :id=id_7r class="selction-btn w-1/4 text-xm opacity-50">7R</Tab>
-        <Tab :id=id_8r class="selction-btn w-1/4 text-xm opacity-50">8R</Tab>
-        <Tab :id=id_9r class="selction-btn w-1/4 text-xm opacity-50">9R</Tab>
-        <Tab :id=id_10r class="selction-btn w-1/4 text-xm opacity-50">10R</Tab>
-        <Tab :id=id_11r class="selction-btn w-1/4 text-xm opacity-50">11R</Tab>
-        <Tab :id=id_12r class="selction-btn w-1/4 text-xm opacity-50">12R</Tab>
+        <Tab :id=id_1r class="selection-btn selection-race opacity-20">1R</Tab>
+        <Tab :id=id_2r class="selection-btn selection-race opacity-20">2R</Tab>
+        <Tab :id=id_3r class="selection-btn selection-race opacity-20">3R</Tab>
+        <Tab :id=id_4r class="selection-btn selection-race opacity-20">4R</Tab>
+        <Tab :id=id_5r class="selection-btn selection-race opacity-20">5R</Tab>
+        <Tab :id=id_6r class="selection-btn selection-race opacity-20">6R</Tab>
+        <Tab :id=id_7r class="selection-btn selection-race opacity-20">7R</Tab>
+        <Tab :id=id_8r class="selection-btn selection-race opacity-20">8R</Tab>
+        <Tab :id=id_9r class="selection-btn selection-race opacity-20">9R</Tab>
+        <Tab :id=id_10r class="selection-btn selection-race opacity-20">10R</Tab>
+        <Tab :id=id_11r class="selection-btn selection-race opacity-20">11R</Tab>
+        <Tab :id=id_12r class="selection-btn selection-race opacity-20">12R</Tab>
 
       </TabList>
       <TabPanels>
@@ -127,18 +127,18 @@ onMounted(() => {
   for (let i = 0; i < data.length; i++) {
     if ((data[i].date == props.day) && (data[i].area == props.area)) {
       switch (data[i].race_no) {
-        case "1": document.getElementById(id_1r).classList.remove("opacity-50"); break;
-        case "2": document.getElementById(id_2r).classList.remove("opacity-50"); break;
-        case "3": document.getElementById(id_3r).classList.remove("opacity-50"); break;
-        case "4": document.getElementById(id_4r).classList.remove("opacity-50"); break;
-        case "5": document.getElementById(id_5r).classList.remove("opacity-50"); break;
-        case "6": document.getElementById(id_6r).classList.remove("opacity-50"); break;
-        case "7": document.getElementById(id_7r).classList.remove("opacity-50"); break;
-        case "8": document.getElementById(id_8r).classList.remove("opacity-50"); break;
-        case "9": document.getElementById(id_9r).classList.remove("opacity-50"); break;
-        case "10": document.getElementById(id_10r).classList.remove("opacity-50"); break;
-        case "11": document.getElementById(id_11r).classList.remove("opacity-50"); break;
-        case "12": document.getElementById(id_12r).classList.remove("opacity-50"); break;
+        case "1": document.getElementById(id_1r).classList.remove("opacity-20"); break;
+        case "2": document.getElementById(id_2r).classList.remove("opacity-20"); break;
+        case "3": document.getElementById(id_3r).classList.remove("opacity-20"); break;
+        case "4": document.getElementById(id_4r).classList.remove("opacity-20"); break;
+        case "5": document.getElementById(id_5r).classList.remove("opacity-20"); break;
+        case "6": document.getElementById(id_6r).classList.remove("opacity-20"); break;
+        case "7": document.getElementById(id_7r).classList.remove("opacity-20"); break;
+        case "8": document.getElementById(id_8r).classList.remove("opacity-20"); break;
+        case "9": document.getElementById(id_9r).classList.remove("opacity-20"); break;
+        case "10": document.getElementById(id_10r).classList.remove("opacity-20"); break;
+        case "11": document.getElementById(id_11r).classList.remove("opacity-20"); break;
+        case "12": document.getElementById(id_12r).classList.remove("opacity-20"); break;
       }
       if (data[i].y_pred_value_race_rank == 1) {
         update_race_name(data[i].race_no, rank1)

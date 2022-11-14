@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 
-.selction-btn{
+.selection-btn{
     @apply bg-gray-800 hover:bg-gray-700 text-gray-50 border-gray-700 focus:ring-gray-600 px-4 py-1.5 border text-center;
 }
 
+.selection-race{
+    @apply w-1/4 text-sm;
+}
+
+.selection-area{
+    @apply w-1/3 text-sm;
+}
+
+.selection-center_region{
+    @apply w-1/2 text-sm;
+}
+
+.selection-today_tomorrow{
+    @apply w-1/2 text-sm;
+}
