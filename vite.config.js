@@ -4,11 +4,15 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dsv from '@rollup/plugin-dsv'
 
+import Pages from 'vite-plugin-pages'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(), 
     dsv(),
+    Pages({
+    }),
   ],
   base: './',
   resolve: {
@@ -18,7 +22,8 @@ export default defineConfig({
   },
   build: {
     outDir: './docs',
-    chunkSizeWarningLimit: 100000000
+    chunkSizeWarningLimit: 100000000,
+
   }
 })
 

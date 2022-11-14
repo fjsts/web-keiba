@@ -4,7 +4,6 @@
 
 
 .selction-btn{
-    @apply bg-gray-800 hover:bg-gray-700 text-gray-50 border-gray-700 focus:ring-gray-600
-    px-4 py-1.5 border text-center
+    @apply bg-gray-800 hover:bg-gray-700 text-gray-50 border-gray-700 focus:ring-gray-600 px-4 py-1.5 border text-center;
 }
 
