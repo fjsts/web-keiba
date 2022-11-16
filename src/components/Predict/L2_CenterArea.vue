@@ -1,6 +1,6 @@
 <template>
   <div class="py-3">
-    <p class="py-1 text-sm">3.競馬場を選択してください</p>
+    <p class="py-1 text-sm">3.場所を選択してください</p>
     <TabGroup>
       <TabList>
         <Tab id="tokyo" class="selection-btn selection-area opacity-20">

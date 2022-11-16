@@ -1,6 +1,6 @@
 <template>
     <div class="py-3">
-        <p class="py-1 text-sm">2.種類を選択してください</p>
+        <p class="py-1 text-sm">2.地方競馬あるいは中央競馬を選択してください</p>
         <TabGroup>
             <TabList>
                 <Tab id="region" class="selection-btn selection-center_region opacity-20">

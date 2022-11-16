@@ -9,7 +9,7 @@
                 <th class="w-1/10">順位</th>
                 <th class="w-1/10">馬番</th>
                 <th class="w-7/10">馬名</th>
-                <th class="w-1/10">期待値</th>
+                <th class="w-1/10">入賞期待値</th>
             </tr>
         </thead>
         <tbody :id="id" class="text-sm"></tbody>

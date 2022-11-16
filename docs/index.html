@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
   <meta charset="UTF-8">
-  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="icon" href="https://fjs-fire.com/icon.svg" type="image/svg+xml">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="robots">
 
-  <title>【完全無料、毎日更新、目指せ回収率120%】元ITエンジニアの競馬予想（Python）</title>
-  <meta name="description" content="過去5年間の走破データ解析により構築したAI競馬予想です。
-    入賞期待が高い馬が高い期待値になるよう学習させています。（期待値が高いほど入賞確率が高い）
-    日付や中央競馬、地方競馬などの条件を選択すると表示内容が切り替わります。">
-  <meta name="keywords" content="AI,競馬予想,LightGBM">
+  <title>【目指せ回収率120%】データサイエンティストの人工知能（AI）競馬予想</title>
+  <meta name="description" 
+  content="過去10年間の走破データを解析し独自のアルゴリズムで作成した完全無料/毎日更新の人工知能（AI）競馬予想です。本サイトでは中央競馬/地方競馬のレース別入賞期待値を掲載しています。日付やレース会場を画面上で選択することで見たい予想をわかりやすく表示できるよう工夫しています。データ収集やモデル作成にはPythonを用いてます。">
+  <meta name="keywords" content="AI,人工知能,競馬予想,Python">
 
-  <meta property="og:title" content="【完全無料、毎日更新、目指せ回収率120%】元ITエンジニアの競馬予想（Python）" />
-  <meta property="og:description"
-    content="過去5年間の走破データ解析により構築したAI競馬予想です。入賞期待が高い馬が高い期待値になるよう学習させています。（期待値が高いほど入賞確率が高い）" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fjs-fire.com/" />
   <meta property="og:image" content="https://fjs-fire.com/icon.png" />
-  <meta property="og:site_name" content="【完全無料、毎日更新、目指せ回収率120%】元ITエンジニアの競馬予想（Python）" />
-  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:title" content="【目指せ回収率120%】データサイエンティストの人工知能（AI）競馬予想" />
+
+  <meta property="og:description"
+    content="過去10年間の走破データを解析し独自のアルゴリズムで作成した完全無料/毎日更新の人工知能（AI）競馬予想です。本サイトでは中央競馬/地方競馬のレース別入賞期待値を掲載しています。日付やレース会場を画面上で選択することで見たい予想をわかりやすく表示できるよう工夫しています。データ収集やモデル作成にはPythonを用いてます。" />
+  <meta property="og:locale" content="ja_JP" />  
+  <meta property="og:site_name" content="【【目指せ回収率120%】データサイエンティストの人工知能（AI）競馬予想" />
+  
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ai_dark_horses" />
-  <meta name="twitter:title" content="【完全無料、毎日更新、目指せ回収率120%】元ITエンジニアの競馬予想（Python）" />
+  <meta name="twitter:title" content="【目指せ回収率120%】データサイエンティストの人工知能（AI）競馬予想" />
   <meta name="twitter:description"
-    content="過去5年間の走破データ解析により構築したAI競馬予想です。入賞期待が高い馬が高い期待値になるよう学習させています。（期待値が高いほど入賞確率が高い）" />
+    content="過去10年間の走破データを解析し独自のアルゴリズムで作成した完全無料/毎日更新の人工知能（AI）競馬予想です。本サイトでは中央競馬/地方競馬のレース別入賞期待値を掲載しています。日付やレース会場を画面上で選択することで見たい予想をわかりやすく表示できるよう工夫しています。データ収集やモデル作成にはPythonを用いてます。" />
   <meta name="twitter:image" content="https://fjs-fire.com/icon.png" />
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6815803998948370"
@@ -43,8 +44,34 @@
     gtag('config', 'G-09YQ0TXZFD');
   </script>
 
-  <script type="module" crossorigin src="./assets/index.5ebd220a.js"></script>
-  <link rel="stylesheet" href="./assets/index.09f2a6f9.css">
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+
+  <script type="module" crossorigin src="./assets/index.7b8d4815.js"></script>
+  <link rel="stylesheet" href="./assets/index.0e4a0c49.css">
 </head>
 
 <body>

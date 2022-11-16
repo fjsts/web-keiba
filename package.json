@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vite build && node ./sitemap.js && echo fjs-fire.com > ./docs/CNAME ",
-    "deploy": "npm run build && gh-pages -d docs -m \"Updates --skip-ci\"",
+    "deploy": "npm run build &&  gh-pages -d docs -m \"Updates --skip-ci\"",
     "dev": "vite",
     "preview": "vite preview"
   },

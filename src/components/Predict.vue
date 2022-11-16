@@ -1,10 +1,9 @@
 
 
 <template>
-
-  <div class="py-4">
-    <p class="text-center mb-4">予想対象を選択してください</p>
-    <p class="py-1 text-sm">1.日付を選択してください</p>
+  <div class="py-2">
+    <p class="text-center text-lg ">レースを選択してください</p>
+    <p class="mt-5 text-sm">1.日付を選択してください</p>
     <TabGroup>
       <TabList>
         <Tab id="today" class="selection-btn selection-today_tomorrow opacity-20">
@@ -29,17 +28,23 @@
 
 <script setup>
 import { defineComponent } from "vue";
-import CenterRegion from './L1_CenterRegion.vue'
+import CenterRegion from './Predict/L1_CenterRegion.vue'
 import AdSense from './AdSense.vue'
-
 import region_csv from '../../data/region_predict.csv'
 import center_csv from '../../data/center_predict.csv'
+
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 import { onMounted } from '@vue/runtime-core'
 
 defineComponent({
   components: { TabGroup, TabList, Tab, TabPanels, TabPanel }
 });
+
+const props = defineProps({
+    region_csv: Object,
+    center_csv: Object
+})
+
 
 function formatDate(dt) {
   dt = new Date(dt)
